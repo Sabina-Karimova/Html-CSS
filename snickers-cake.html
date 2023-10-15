@@ -3,8 +3,11 @@
 <head>
 <meta charset="utf-8">
 <title>Layout</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 <style type="text/css">
 *
+
 
 {
 margin:0px;
@@ -41,7 +44,6 @@ width:100%;
 min-height:20px;
 background-color:lightblue;
 text-align:center;
-line-height:
 margin-bottom:50px;
 color:yellow;
 
@@ -76,7 +78,7 @@ min-height:400px;
 background-color:lightgray;
 float:right;
 text-align:center;
-line-height:50px
+line-height:50px;
 color:blue;
 }
 
@@ -112,69 +114,122 @@ margin:auto;
 
 </head>
 <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+      aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <a class="navbar-brand" href="index.html" style="color: lightcyan; padding-left: 20px;">Cake Store</a>
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="snickers-cake.html" style="color: rgb(182,227,126);">Snickers<span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="kiev-cake.html" style="color: aliceblue;"> Kiev</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="honey-cake.html" style="color: aliceblue;">Honey</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="red-velvet.html" style="color: aliceblue;"> Red-velvet</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tiramisu.html" style="color: aliceblue;">Tiramisu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cheese-cake.html" style="color: aliceblue">Cheescake</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-<div id="wrapper-div">
-
-<div id="logo-div">
-
-  <h2>Welcome my magic🍩🎂🍪🍯cake shop😍</h2>
-</div>
-<div id="nav-div">
-<h3>You can hier order:<h3>
-</div>
-
-<div id="header-banner-div">
-
-🍡🧁🍧🍰🥮🍨🍬🌰🍫🧁🍭🍡🥮🥜🍫🍿🎂🧁🍰
-</div>
-
-<div id="main-div" class="clearfix">
-
-<div id="sidebar-div">
-<ul><a href=index.html>List of cakes</a></ul>	
-<li><a href=kiev-cake.html>Kyiv Cake</a></li>
-<li><a href=red-velvet.html>Red Velvet</a></li>
-<li><a href=cheese-cake.html>Cheescake</a></li>
-<li><a href=honey-cake.html>Honey cake</a></li>
-<li><a href=tiramisu.html>Tiramisu</a></li>
-<li><a href=snickers-cake.html>Snickers cake</a></li>
-
-</div>
-<div id="bodyarea-div">
-<img src="img/snickers.jpeg" border="2" width="100%">
-
-</div>
-
-</div>
-<div id="footer-div">
-
-<h3>Lîst of price</h3>
-<table border="10" cellpadding="10">
-<tr>
-<th>Name of Cake</th>
-<th> 15€</th>
-<th>25€</th>
-<th>35€</th>
-<th>45€</th>
-<th>55€</th>
-</tr>
-<tr>
-<td> Red Velvet</td>
-<td>2persons</td>
-<td>5 persons</td>
-<td>10 person</td>
-<td>15 persons</td>
-<td>Enjoy it🤤</td>
-</tr>
+  <div style="background-color: rgb(255, 240, 246); border-color: blueviolet; border-width: 2px;">
+    <div class="container">
+      <div class="row">
+        
+        <div class="col">
+          <div class="card" style="width: 100%; margin: 20px;">
+            <div class="card-body">
+              <h5 class="card-title" style="color: rgb(9, 7, 5);">Snickers</h5>
+            </div>
+            <img src="img/snickers.jpeg" class="card-img-top">
+          </div>
+        </div>
 
 
-</table>
+        <div class="col">
+          <div class="card" style="width: 100%; margin: 20px;">
+            <div class="card-body">
+              <h5 class="card-title" style="color: rgb(9, 7, 5);">Ingridients</h5>
+              <p class="card-text" style="color: blue;">Qiymetler:35%</p>
+              <p class="card-text" style="color: blue;">Carbohidrates:35%</p>
+              <p class="card-text" style="color: blue;">Butter:15%</p>
+              <p class="card-text" style="color: blue;">Sugar:35%</p>
+              <p class="card-text" style="color: blue;">Carbohidrates:35%</p>
+              <p class="card-text" style="color: blue;">Butter:15%</p>
+            </div>
+          </div>
+        </div>
 
 
+      </div>
 
-</div>
-</div>
 
+      <div class="row">
+
+        
+        <div class="col">
+          <div class="card" style="width: 100%; margin: 20px;">
+            <div class="card-body">
+              <h5 class="card-title" style="color: rgb(9, 7, 5);">Full cake</h5>
+              <p class="card-text" style="color: blue;">Qiymetler:35%</p>
+              <p class="card-text" style="color: blue;">Carbohidrates:35%</p>
+              <p class="card-text" style="color: blue;">Butter:15%</p>
+              <p class="card-text" style="color: blue;">Sugar:35%</p>
+              <p class="card-text" style="color: blue;">Carbohidrates:35%</p>
+              <p class="card-text" style="color: blue;">Butter:15%</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" style="width: 100%; margin: 20px;">
+            <div class="card-body">
+              <h5 class="card-title" style="color: rgb(9, 7, 5);">Half</h5>
+              <p class="card-text" style="color: blue;">Qiymetler:35%</p>
+              <p class="card-text" style="color: blue;">Carbohidrates:35%</p>
+              <p class="card-text" style="color: blue;">Butter:15%</p>
+              <p class="card-text" style="color: blue;">Sugar:35%</p>
+              <p class="card-text" style="color: blue;">Carbohidrates:35%</p>
+              <p class="card-text" style="color: blue;">Butter:15%</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col">
+          <div class="card" style="width: 100%; margin: 20px;">
+            <div class="card-body">
+              <h5 class="card-title" style="color: rgb(9, 7, 5);">Piece</h5>
+              <p class="card-text" style="color: blue;">Qiymetler:35%</p>
+              <p class="card-text" style="color: blue;">Carbohidrates:35%</p>
+              <p class="card-text" style="color: blue;">Butter:15%</p>
+              <p class="card-text" style="color: blue;">Sugar:35%</p>
+              <p class="card-text" style="color: blue;">Carbohidrates:35%</p>
+              <p class="card-text" style="color: blue;">Butter:15%</p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+crossorigin="anonymous"></script>
 </body>
 
 
