@@ -1,118 +1,34 @@
 <!doctype html>
 <html lang="eng">
+
 <head>
-<meta charset="utf-8">
-<title>Layout</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-<style type="text/css">
-*
-
-
-{
-margin:0px;
-padding:0px;
-box-sizing:border-box;
-font-family:Arial;
-}
-
-#logo-div
-{
-width:100%;
-min-height:50px;
-background-color:lightyellow;
-padding-left:2%;
-line-height:50px;
-margin-bottom:10px;
-}
-#nav-div
-{
-
-width:100%;
-min-height:30px;
-background-color:rgb(18, 189, 192);
-text-align:center;
-line-height:30px;
-margin-bottom:10px;
-color:blue;
-
-}
-#header-banner-div
-{
-
-width:100%;
-min-height:20px;
-background-color:lightblue;
-text-align:center;
-margin-bottom:50px;
-color:yellow;
-
-
-}
-#main-div
-{
-width:100%;
-margin-bottom:10px;
-
-
-}
-
-#sidebar-div
-{
-width:20%;
-min-height:400px;
-background-color:lightpink;
-float:left;
-text-align:center;
-line-height:100px;
-
-
-
-
-}
-#bodyarea-div
-{
-
-width:80%;
-min-height:400px;
-background-color:lightgray;
-float:right;
-text-align:center;
-line-height:50px;
-color:blue;
-}
-
-
-
-.clearfix::after
-{
-content:"";
-display:block;
-clear:both;
-
-}
-#footer-div
-{
-width:100%;
-min-height:100px;
-background-color:lightgreen;
-text-align:center;
-line-height:50px;
-color:viollet;
-
-}
-#wrapper-div
-{
-
-
-width:100%;
-margin:auto;
-
-}
-
-</style>
-
+  <meta charset="utf-8">
+  <title>Layout</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+ 
+    <style>
+      table {
+        border-collapse: separate;
+        border-spacing: 0 15px;
+      }
+      th {
+        background-color: #4287f5;
+        color: white;
+      }
+      th,
+      td {
+        width: 150px;
+        text-align: center;
+        border: 1px solid black;
+        padding: 5px;
+      }
+      h2 {
+        color: #4287f5;
+      }
+    </style>
 </head>
+
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-primary">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
@@ -120,10 +36,11 @@ margin:auto;
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <a class="navbar-brand" href="index.html" style="color: lightcyan; padding-left: 20px;" >Cake Store</a>
+      <a class="navbar-brand" href="index.html" style="color: lightcyan; padding-left: 20px;">Cake Store</a>
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item active">
-          <a class="nav-link" href="snickers-cake.html" style="color: aliceblue;">Snickers<span class="sr-only"></span></a>
+          <a class="nav-link" href="snickers-cake.html" style="color: aliceblue;">Snickers<span
+              class="sr-only"></span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="kiev-cake.html" style="color: rgb(182, 227, 126);"> Kiev</a>
@@ -144,70 +61,112 @@ margin:auto;
     </div>
   </nav>
 
-<div id="wrapper-div">
+  <div style=" border-color: blueviolet; border-width: 2px;">
+    <div class="container">
+      <div class="row">
 
-<div id="logo-div">
-
-  <h2>Welcome my magic🍩🎂🍪🍯cake shop😍</h2>
-</div>
-<div id="nav-div">
-<h3>You can hier order:<h3>
-</div>
-
-<div id="header-banner-div">
-
-🍡🧁🍧🍰🥮🍨🍬🌰🍫🧁🍭🍡🥮🥜🍫🍿🎂🧁🍰
-</div>
-
-<div id="main-div" class="clearfix">
-
-<div id="sidebar-div">
-<ul><a href=index.html>List of cakes</a></ul>	
-<li><a href=kiev-cake.html>Kyiv Cake</a></li>
-<li><a href=red-velvet.html>Red Velvet</a></li>
-<li><a href=cheese-cake.html>Cheescake</a></li>
-<li><a href=honey-cake.html>Honey cake</a></li>
-<li><a href=tiramisu.html>Tiramisu</a></li>
-<li><a href=snickers-cake.html>Snickers cake</a></li>
-
-</div>
-<div id="bodyarea-div">
-<img src="img/kiev.jpeg" border="2" width="100%">
-
-</div>
-
-</div>
-<div id="footer-div">
-
-<h3>Lîst of price</h3>
-<table border="10" cellpadding="10">
-<tr>
-<th>Name of Cake</th>
-<th> 15€</th>
-<th>25€</th>
-<th>35€</th>
-<th>45€</th>
-<th>55€</th>
-</tr>
-<tr>
-<td> Red Velvet</td>
-<td>2persons</td>
-<td>5 persons</td>
-<td>10 person</td>
-<td>15 persons</td>
-<td>Enjoy it🤤</td>
-</tr>
-
-
-</table>
+        <div class="col">
+          <div class="card" style="width: 100%; margin: 20px;">
+            <div class="card-body">
+              <h5 class="card-title" style="color: rgb(200, 21, 84);">Kiev</h5>
+            </div>
+            <img src="img/kiev.jpeg" class="card-img-top">
+          </div>
+        </div>
 
 
 
-</div>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-crossorigin="anonymous"></script>
+        <div class="col">
+          <div class="card img=" style="width: 100%; margin: 20px;">
+            <div class="card-body">
+              <table itemprop="nutrition" itemscope="" style="line-height: 20px;" id="ingredientstable"><tbody><tr>
+              <th>Quantity</th><th>Measure</th><th>Calorie content</th><th>The weight</th>
+              </tr><tr class="ingredientstring">
+               <td>200
+              </td>
+               <td>gram</td><td>90 kcal</td><td>200 g</td>
+              </tr><tr class="ingredientstring"><td>250
+              </td>
+               <td>gram</td><td>1870 kcal</td><td>250 g</td>
+              </tr><tr class="ingredientstring"><td>460
+              </td>
+               <td>gram</td><td>1780 kcal</td><td>460 g</td>
+              </tr><tr class="ingredientstring"><td>45
+              </td>
+               <td>gram</td><td>154 kcal</td><td>45 g</td>
+              </tr><tr class="ingredientstring"><td>10
+              </td>
+               <td>gram</td><td>29 kcal</td><td>10 g</td>
+              </tr><tr class="ingredientstring"><td>1
+              </td>
+               <td>things</td><td>110 kcal</td><td>70 g</td>
+              </tr><tr class="ingredientstring"><td>30
+              </td>
+               <td>gram</td><td>120 kcal</td><td>30 g</td>
+              </tr><tr class="ingredientstring"><td>150
+              </td>
+               <td>gram</td><td>87 kcal</td><td>150 g</td>
+            
+
+               </td>
+              </tr><tr class="ingredientstring">
+
+              </tr></tbody></table>
+             
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="row">
+
+        <p>
+
+          <br>
+          There is <b><span id="foodAnalysisCalories">446</span> calories</b> in <b><span
+              id="foodAnalysisServingSize">113</span> grams</b> of <b>Cake - Snickers</b>.
+          With 400 calories per 100 grams, this food would be considered a <b>High</b> calorie density food.
+
+
+          Be carefull, <b>High</b> calorie density food tends to add up calories quickly and you should be carefull
+          with your portion size if you are trying to lose weight.
+          <br><br>
+          <b>Cake - Snickers</b> is <b>High</b> in carbohydrates, <b>Very Low</b> in proteins and <b>High</b> in fats.
+          You can look at the macronutrients graph below for a detailed ratio.
+
+
+
+          This item has <b>High</b> quantity of carbohydrates and fats. This combinasion is usually indicating that
+          you should stay away from this food labeled as "Junk Food".
+          <br><br>
+          With 50 grams of "Net carbohydrates" per 100 grams,
+
+          it not safe to consume if you are following a Keto or Ketosis diet.
+
+
+        </p>
+        
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-light text-center text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center p-3 bg-primary" style="color: aliceblue;">
+      © 2023 Sabina Karimova
+      <a class="text-light" href="https://github.com/Sabina-Karimova/Html-CSS">See on GitHub</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
 
 
 </body>

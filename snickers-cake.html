@@ -1,118 +1,15 @@
 <!doctype html>
 <html lang="eng">
+
 <head>
-<meta charset="utf-8">
-<title>Layout</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-<style type="text/css">
-*
+  <meta charset="utf-8">
+  <title>Layout</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
-
-{
-margin:0px;
-padding:0px;
-box-sizing:border-box;
-font-family:Arial;
-}
-
-#logo-div
-{
-width:100%;
-min-height:50px;
-background-color:lightyellow;
-padding-left:2%;
-line-height:50px;
-margin-bottom:10px;
-}
-#nav-div
-{
-
-width:100%;
-min-height:30px;
-background-color:orange;
-text-align:center;
-line-height:30px;
-margin-bottom:10px;
-color:blue;
-
-}
-#header-banner-div
-{
-
-width:100%;
-min-height:20px;
-background-color:lightblue;
-text-align:center;
-margin-bottom:50px;
-color:yellow;
-
-
-}
-#main-div
-{
-width:100%;
-margin-bottom:10px;
-
-
-}
-
-#sidebar-div
-{
-width:20%;
-min-height:400px;
-background-color:lightpink;
-float:left;
-text-align:center;
-line-height:100px;
-
-
-
-
-}
-#bodyarea-div
-{
-
-width:75%;
-min-height:400px;
-background-color:lightgray;
-float:right;
-text-align:center;
-line-height:50px;
-color:blue;
-}
-
-
-
-.clearfix::after
-{
-content:"";
-display:block;
-clear:both;
-
-}
-#footer-div
-{
-width:100%;
-min-height:100px;
-background-color:lightgreen;
-text-align:center;
-line-height:50px;
-color:viollet;
-
-}
-#wrapper-div
-{
-
-
-width:100%;
-margin:auto;
-
-}
-
-</style>
 
 </head>
+
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-primary">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
@@ -123,7 +20,8 @@ margin:auto;
       <a class="navbar-brand" href="index.html" style="color: lightcyan; padding-left: 20px;">Cake Store</a>
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item active">
-          <a class="nav-link" href="snickers-cake.html" style="color: rgb(182,227,126);">Snickers<span class="sr-only"></span></a>
+          <a class="nav-link" href="snickers-cake.html" style="color: rgb(182,227,126);">Snickers<span
+              class="sr-only"></span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="kiev-cake.html" style="color: aliceblue;"> Kiev</a>
@@ -144,10 +42,11 @@ margin:auto;
     </div>
   </nav>
 
-  <div style="background-color: rgb(255, 240, 246); border-color: blueviolet; border-width: 2px;">
+  <div style="border-color: blueviolet; border-width: 2px;">
     <div class="container">
+
       <div class="row">
-        
+
         <div class="col">
           <div class="card" style="width: 100%; margin: 20px;">
             <div class="card-body">
@@ -159,77 +58,174 @@ margin:auto;
 
 
         <div class="col">
-          <div class="card" style="width: 100%; margin: 20px;">
-            <div class="card-body">
-              <h5 class="card-title" style="color: rgb(9, 7, 5);">Ingridients</h5>
-              <p class="card-text" style="color: blue;">Qiymetler:35%</p>
-              <p class="card-text" style="color: blue;">Carbohidrates:35%</p>
-              <p class="card-text" style="color: blue;">Butter:15%</p>
-              <p class="card-text" style="color: blue;">Sugar:35%</p>
-              <p class="card-text" style="color: blue;">Carbohidrates:35%</p>
-              <p class="card-text" style="color: blue;">Butter:15%</p>
+          <div class="row">
+            <div class="card" style="width: 100%; margin: 20px;">
+              <div class="card-body">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th colspan="3" class="small-info">
+                        Amount Per Serving
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th colspan="2">
+                        <b2>Calories</b2>
+                        <span id="nutritionFactsCalories">446</span>
+                      </th>
+                      <td>
+                        Calories from Fat
+                        204
+                      </td>
+                    </tr>
+                    <tr class="thick-row">
+                      <td colspan="3" class="small-info">
+                        <b>% Daily Value*</b>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th colspan="2">
+                        <div ></div><b2>Total Fat</b2>
+                        22<text>g</text>
+                      </th>
+                      <td>
+                        <b>34<text>%</text></b>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="blank-cell">
+                      </td>
+                      <th>
+                        Saturated Fat
+                        6<text>g</text>
+                      </th>
+                      <td>
+                        <b>30<text>%</text></b>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="blank-cell">
+                      </td>
+                      <th>
+                        Trans Fat
+                        0<text>g</text>
+                      </th>
+                      <td>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th colspan="2">
+                        <b2>Cholesterol</b2>
+                        23<text>mg</text>
+                      </th>
+                      <td>
+                        <b>8<text>%</text></b>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th colspan="2">
+                        <b2>Sodium</b2>
+                        395<text>mg</text>
+                      </th>
+                      <td>
+                        <b>16<text>%</text></b>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th colspan="2">
+                        <div class="dot carb"></div><b2>Total Carbohydrate</b2>
+                        59<text>g</text>
+                      </th>
+                      <td>
+                        <b>20<text>%</text></b>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="blank-cell">
+                      </td>
+                      <th>
+                        Dietary Fiber
+                        2<text>g</text>
+                      </th>
+                      <td>
+                        <b>8<text>%</text></b>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="blank-cell">
+                      </td>
+                      <th>
+                        Sugars
+                        45<text>g</text>
+                      </th>
+                      <td>
+                      </td>
+                    </tr>
+                    <tr class="thick-end">
+                      <th colspan="2">
+                        <div class="dot protein"></div><b2>Protein</b2>
+                        3<text>g</text>
+                      </th>
+                      <td>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
+          
         </div>
 
 
       </div>
 
-
       <div class="row">
-
-        
         <div class="col">
-          <div class="card" style="width: 100%; margin: 20px;">
-            <div class="card-body">
-              <h5 class="card-title" style="color: rgb(9, 7, 5);">Full cake</h5>
-              <p class="card-text" style="color: blue;">Qiymetler:35%</p>
-              <p class="card-text" style="color: blue;">Carbohidrates:35%</p>
-              <p class="card-text" style="color: blue;">Butter:15%</p>
-              <p class="card-text" style="color: blue;">Sugar:35%</p>
-              <p class="card-text" style="color: blue;">Carbohidrates:35%</p>
-              <p class="card-text" style="color: blue;">Butter:15%</p>
-            </div>
-          </div>
+          <p>
+
+            <br>
+            There is <b><span id="foodAnalysisCalories">446</span> calories</b> in <b><span
+                id="foodAnalysisServingSize">113</span> grams</b> of <b>Cake - Snickers</b>.
+            With 400 calories per 100 grams, this food would be considered a <b>High</b> calorie density food.
+
+
+            Be carefull, <b>High</b> calorie density food tends to add up calories quickly and you should be carefull
+            with your portion size if you are trying to lose weight.
+            <br><br>
+            <b>Cake - Snickers</b> is <b>High</b> in carbohydrates, <b>Very Low</b> in proteins and <b>High</b> in fats.
+            You can look at the macronutrients graph below for a detailed ratio.
+
+            This item has <b>High</b> quantity of carbohydrates and fats. This combinasion is usually indicating that
+            you should stay away from this food labeled as "Junk Food".
+            <br><br>
+            With 50 grams of "Net carbohydrates" per 100 grams,
+
+            it not safe to consume if you are following a Keto or Ketosis diet.
+
+
+          </p>
         </div>
-
-        <div class="col">
-          <div class="card" style="width: 100%; margin: 20px;">
-            <div class="card-body">
-              <h5 class="card-title" style="color: rgb(9, 7, 5);">Half</h5>
-              <p class="card-text" style="color: blue;">Qiymetler:35%</p>
-              <p class="card-text" style="color: blue;">Carbohidrates:35%</p>
-              <p class="card-text" style="color: blue;">Butter:15%</p>
-              <p class="card-text" style="color: blue;">Sugar:35%</p>
-              <p class="card-text" style="color: blue;">Carbohidrates:35%</p>
-              <p class="card-text" style="color: blue;">Butter:15%</p>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col">
-          <div class="card" style="width: 100%; margin: 20px;">
-            <div class="card-body">
-              <h5 class="card-title" style="color: rgb(9, 7, 5);">Piece</h5>
-              <p class="card-text" style="color: blue;">Qiymetler:35%</p>
-              <p class="card-text" style="color: blue;">Carbohidrates:35%</p>
-              <p class="card-text" style="color: blue;">Butter:15%</p>
-              <p class="card-text" style="color: blue;">Sugar:35%</p>
-              <p class="card-text" style="color: blue;">Carbohidrates:35%</p>
-              <p class="card-text" style="color: blue;">Butter:15%</p>
-            </div>
-          </div>
-        </div>
-
-
       </div>
     </div>
   </div>
-  
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-crossorigin="anonymous"></script>
+
+
+
+<footer class="bg-light text-center text-lg-start">
+  <!-- Copyright -->
+  <div class="text-center p-3 bg-primary" style="color: aliceblue;">
+    © 2023 Sabina Karimova
+    <a class="text-light" href="https://github.com/Sabina-Karimova/Html-CSS">See on GitHub</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
 </body>
 
 
