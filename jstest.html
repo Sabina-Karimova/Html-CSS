@@ -1,0 +1,75 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JSON Sandbox</title>
+
+<style>
+   ul {
+      list-style-type:lower-greek;
+   }
+</style>
+
+
+</head>
+<body>
+   <ul id="people"> </ul>
+
+<script>
+
+
+var person = {
+name: "Brad",
+ age: 32,
+ address:{
+
+   street:"5 main st",
+   city:"Boston"
+ },
+ children:["Brianna","Nicholas"]
+ }
+
+//person = JSON.stringify(person);
+ //person =JSON.parse(person);
+
+ var people = [
+{
+
+name:"Brad",
+age:35
+},
+{
+
+name:"John",
+age:40
+
+},
+{
+
+name:"Sarah",
+age:25
+
+},
+
+{
+
+name:"Sabina",
+age:25
+
+}
+ ];
+//console.log(people[1].age);
+var  output = '';
+for(var k=0; k <= 2;k++){
+
+//console.log(people[i].name);
+
+output += '<li style="color:blue">'+people[k + 1].name + '<p style="color:red"> indeksi: -> ' + k + '</p></li>';
+
+
+}
+document.getElementById('people').innerHTML=output;
+
+</script>
+</body>
+</html>

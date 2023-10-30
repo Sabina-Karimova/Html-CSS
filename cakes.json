@@ -1,6 +1,4 @@
-
-
-var cakes_data = {
+{
     "cakes": [
         {
             "id": 1,
@@ -319,48 +317,4 @@ var cakes_data = {
 
 
     ]
-};
-
-
-console.log(cakes_data.cakes.length);
-
-var cakes_menu = "";
-
-for (var i=0; i < cakes_data.cakes.length; i++) {
-    cakes_menu = cakes_menu + '<li><a class="dropdown-item" href="#">' + i + " " +cakes_data.cakes[i].name + '</a></li>\n';
 }
-console.log(cakes_menu);
-document.getElementById("cakes-drowdown1").innerHTML = cakes_menu;
-//<li><a class="dropdown-item" href="#">Another action</a></li>
-//<li><a class="dropdown-item" href="#">Something else here</a></li>"
-
-
-
-function changeColor() {
-
-    document.body.style.backgroundColor = "red";
-
-};
-
-function green() {
-
-    console.log("Button clicked");
-    document.body.style.backgroundColor = "green";
-
-};
-
-
-
-function red() {
-
-    console.log("Button clicked");
-    document.body.style.backgroundColor = "red";
-
-};
-
-function white() {
-
-    console.log("Button clicked");
-    document.body.style.backgroundColor = "white";
-
-};
